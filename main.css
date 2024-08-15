@@ -1,0 +1,44 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: bot;
+    transform: translate(0, 0);
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    margin-left: 25%;
+}
+
+@keyframes bot {
+    0% {
+        transform: translate(0, 0);
+
+        background-color: aqua;
+    }
+
+    25% {
+        transform: translateX(500px);
+        /* Move right */
+        background-color: rgb(247, 0, 255);
+    }
+
+    50% {
+        transform: translate(500px, 500px);
+        /* Move down */
+        background-color: black;
+    }
+
+    75% {
+        transform: translate(0, 500px);
+        /* Move left */
+        background-color: rgb(223, 122, 15);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        /* Move up to starting point */
+        background-color: red;
+    }
+}
